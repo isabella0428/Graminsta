@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><h1>Send a post</h1></title>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+		<input type="text" name="description">
+        <input type="file" name="img">
+        <button type="submit">上传</button>
+    </form>
+</body>
+</html>
